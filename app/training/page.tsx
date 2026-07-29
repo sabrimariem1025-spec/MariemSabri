@@ -1,7 +1,7 @@
 import { Training } from "@/components/training";
 import { AudiencesMethodology } from "@/components/audiences-methodology";
 
-export const metadata = { title: "Training — Mariem Sabri" };
+export const metadata = { title: "Mariem Sabri" };
 
 export default function TrainingPage() {
   return (
