@@ -7,6 +7,32 @@ import { Mail, Phone, Linkedin, Github, Download } from "lucide-react";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+const [loading, setLoading] = useState(false);
+async function handleSubmit(e:any){
+  e.preventDefault();
+
+  setLoading(true);
+
+  const form = e.target;
+
+  const response = await fetch(
+    "https://formspree.io/f/mkodejrd",
+    {
+      method:"POST",
+      body:new FormData(form),
+      headers:{
+        Accept:"application/json"
+      }
+    }
+  );
+
+  if(response.ok){
+    setSent(true);
+    form.reset();
+  }
+
+  setLoading(false);
+}
 
   return (
     <section id="contact" className="py-24 bg-paper-soft/40 dark:bg-white/[0.02]">
@@ -45,19 +71,15 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSent(true);
-            }}
-            className="space-y-4"
-          >
+   <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name" className="text-xs font-mono uppercase tracking-wide text-slate dark:text-paper/60">
                 Name
               </label>
               <input
                 id="name"
+                 name="name"
+
                 required
                 className="mt-1 w-full bg-transparent border-b border-ink/20 dark:border-paper/20 py-2 focus:border-gold outline-none"
               />
@@ -68,6 +90,8 @@ export function Contact() {
               </label>
               <input
                 id="email"
+                 name="email"
+
                 type="email"
                 required
                 className="mt-1 w-full bg-transparent border-b border-ink/20 dark:border-paper/20 py-2 focus:border-gold outline-none"
@@ -79,6 +103,7 @@ export function Contact() {
               </label>
               <textarea
                 id="message"
+                 name="message"
                 required
                 rows={4}
                 className="mt-1 w-full bg-transparent border-b border-ink/20 dark:border-paper/20 py-2 focus:border-gold outline-none resize-none"
@@ -90,12 +115,7 @@ export function Contact() {
             >
               {sent ? "Message sent" : "Send message"}
             </button>
-            {sent && (
-              <p className="text-xs text-teal dark:text-teal-light">
-                Thank you — wire this form to an email service (e.g. Resend
-                or Formspree) to receive submissions.
-              </p>
-            )}
+           
           </form>
         </Reveal>
       </div>

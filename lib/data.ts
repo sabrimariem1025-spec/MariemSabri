@@ -267,6 +267,8 @@ export const certificateCategories = [
   "AI",
   "Programming",
   "Teaching",
+   "Soft Skills"
+
 ];
 
 export const achievements = [

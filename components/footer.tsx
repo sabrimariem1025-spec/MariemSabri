@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="py-10 hairline">
       <div className="container-content flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate dark:text-paper/50">
         <p>© {new Date().getFullYear()} Mariem Sabri. All rights reserved.</p>
-        <p className="font-mono">Built with Next.js · TypeScript · Tailwind CSS</p>
+        <p className="font-mono"></p>
       </div>
     </footer>
   );

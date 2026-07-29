@@ -27,7 +27,7 @@ export function LogoMark({ size = 32, className = "" }: { size?: number; classNa
 export function LogoWordmark({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-2.5 ${className}`}>
-      <LogoMark size={28} className="text-gold dark:text-gold-light shrink-0" />
+      {/* <LogoMark size={28} className="text-gold dark:text-gold-light shrink-0" /> */}
       <span className="font-display italic text-lg leading-none tracking-tight">
         Mariem Sabri
       </span>

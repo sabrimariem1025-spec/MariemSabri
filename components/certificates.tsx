@@ -12,12 +12,30 @@ export type Certificate = {
   credentialId?: string;
   category: string;
   url?: string;
+  image?: string;
 };
 
-// No certificates have been supplied yet — add real entries here as they
-// become available. The grid, filters and card layout are already wired up.
-const certificates: Certificate[] = [];
 
+const certificates: Certificate[] = [
+  {
+    title: "Soft Skills Training",
+    organization: "Association des Jeunes Créateurs",
+    issueDate: "2021",
+    category: "Soft Skills",
+  },
+  {
+    title: "Animation Training",
+    organization: "Association des Jeunes Créateurs",
+    issueDate: "2019",
+    category: "Teaching",
+  },
+  {
+    title: "HP LIFE e-Learning Training",
+    organization: "HP",
+    issueDate: "2019",
+    category: "HP LIFE",
+  },
+];
 export function Certificates() {
   const [active, setActive] = useState<string>("All");
   const filtered =
@@ -70,13 +88,7 @@ export function Certificates() {
             </div>
           ))}
 
-          <div className="rounded-2xl p-6 border border-dashed border-ink/20 dark:border-paper/20 flex flex-col items-center justify-center text-center min-h-[180px]">
-            <Plus className="text-gold" size={20} />
-            <p className="text-sm text-slate dark:text-paper/60 mt-3">
-              Add your certificates here — image, title, organization, issue
-              date and credential ID slot straight into this grid.
-            </p>
-          </div>
+        
         </div>
       </div>
     </section>
