@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-paper text-ink dark:bg-ink dark:text-paper font-body antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  @apply bg-gold/30;
+}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #B08D57;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.eyebrow {
+  @apply font-mono text-xs tracking-[0.2em] uppercase text-gold dark:text-gold-light;
+}
+
+.section-title {
+  @apply font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight;
+}
+
+.container-content {
+  @apply max-w-content mx-auto px-6 sm:px-8 lg:px-10;
+}
+
+.card-surface {
+  @apply bg-white/70 dark:bg-white/[0.04] border border-ink/10 dark:border-paper/10 backdrop-blur-sm;
+}
+
+.hairline {
+  @apply border-t border-ink/10 dark:border-paper/10;
+}
