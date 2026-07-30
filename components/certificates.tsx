@@ -18,23 +18,7 @@ export type Certificate = {
 
 const certificates: Certificate[] = [
 
-  {
-    title: "Animation Training",
-    organization: "Association des Jeunes Créateurs",
-    issueDate: "2019",
-    category: "Teaching",
-  },
-  {
-    title: "HP LIFE e-Learning Training",
-    organization: "HP",
-    issueDate: "2019",
-    category: "HP LIFE",
-  },  {
-    title: "Soft Skills Training",
-    organization: "Association des Jeunes Créateurs",
-    issueDate: "2021",
-    category: "Soft Skills",
-  },
+  
 {
   title: "CMS Site Editor Training",
   organization: "University of Wyoming",
@@ -47,6 +31,24 @@ const certificates: Certificate[] = [
   issueDate: "July 2026",
   category: "AI & Prompt Engineering",
 },
+{
+    title: "Soft Skills Training",
+    organization: "Association des Jeunes Créateurs",
+    issueDate: "2021",
+    category: "Soft Skills",
+  },
+{
+    title: "Animation Training",
+    organization: "Association des Jeunes Créateurs",
+    issueDate: "2019",
+    category: "Teaching",
+  },
+  {
+    title: "HP LIFE e-Learning Training",
+    organization: "HP",
+    issueDate: "2019",
+    category: "HP LIFE",
+  }
 ];
 export function Certificates() {
   const [active, setActive] = useState<string>("All");
