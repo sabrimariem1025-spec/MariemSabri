@@ -15,14 +15,14 @@ export const profile = {
   ],
   mission:
     "Empowering children, youth and adults with practical digital skills through engaging, inclusive and hands-on technology education.",
-  objective:
-    "Become an internationally recognized trainer and work in Saudi Arabia as a Digital Skills Trainer, ICT Teacher, AI Trainer or Technology Educator.",
+objective:
+"Become an internationally recognized trainer in digital skills, ICT, artificial intelligence and technology education, creating meaningful learning experiences and contributing to digital education initiatives worldwide.",
 };
 
 export const heroStats = [
   {
     label: "Training Audiences",
-    value: "9 → 74 Years",
+    value: "9 → 54 Years",
     note: "children, youth & adults",
   },
   {
@@ -207,8 +207,15 @@ detail: "Digital Literacy, Office Productivity, Artificial Intelligence & Web De
   {
     org: "Association des Jeunes Créateurs",
     role: "Volunteer",
-    period: "August 2017 – June 2020",
+    period: "August 2020 – June 2024",
     detail: "Association Tunisienne des Médias Alternatifs.",
+  },
+    {
+    org: "Tunisian Association for Alternative Media",
+    role: "Ambassador",
+    period: "August 2018 – June 2020",
+    detail:
+      "Represented the association in youth engagement, communication and community initiatives promoting alternative media.",
   },
 ];
 
