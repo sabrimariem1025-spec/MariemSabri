@@ -269,13 +269,13 @@ export const projects: Project[] = [
 ];
 
 export const certificateCategories = [
-  "Professional Certifications",
-  "HP LIFE",
-  "AI",
-  "Programming",
-  "Teaching",
-   "Soft Skills"
 
+  "Artificial Intelligence",
+  "AI & Prompt Engineering",
+  "Teaching & Training",
+  "Web Content Management & Accessibility",
+  "Soft Skills",
+  "HP LIFE",
 ];
 
 export const achievements = [

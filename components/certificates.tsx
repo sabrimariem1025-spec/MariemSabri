@@ -17,20 +17,45 @@ export type Certificate = {
 
 
 const certificates: Certificate[] = [
+  {
+    title: "Teaching with Technology",
+    organization: "Microsoft",
+    issueDate: "2026",
+    category: "Teaching & Training",
+  },
 
-  
-{
-  title: "CMS Site Editor Training",
-  organization: "University of Wyoming",
-  issueDate: "July 2026",
-  category: "Web Content Management & Accessibility",
-},
+  {
+    title: "Training of Trainers",
+    organization: "Professional Training Certification",
+    issueDate: "2026",
+    category: "Teaching & Training",
+  },
 {
   title: "AI Prompt Essentials",
   organization: "University of Wyoming - WyoLearn",
-  issueDate: "July 2026",
+  issueDate: "2026",
   category: "AI & Prompt Engineering",
 },
+{
+  title: "CMS Site Editor Training",
+  organization: "University of Wyoming - WyoLearn",
+  issueDate: "2026",
+  category: "Web Content Management & Accessibility",
+},
+
+  {
+    title: "Google AI Essentials",
+    organization: "Google",
+    issueDate: "2025",
+    category: "Artificial Intelligence",
+  },
+
+  {
+    title: "Generative AI Fundamentals",
+    organization: "IBM",
+    issueDate: "2025",
+    category: "Artificial Intelligence",
+  },
 {
     title: "Soft Skills Training",
     organization: "Association des Jeunes Créateurs",
